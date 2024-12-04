@@ -1,0 +1,49 @@
+.marker{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.web{
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.capture-button{
+    width: 90%;
+    height: 30px;
+    font-weight: bold;
+    background-color: hsl(120, 100%, 25%);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.capture-button:hover{
+    background-color: hsl(120, 100%, 20%);
+    transition-duration: 0.3s;
+}
+.capture-button:active{
+    background-color: hsl(120, 100%, 30%);
+    transition-duration: 0.3s;
+}
+.message{
+    text-align: center;
+    color: Red;
+    font-weight: bold;
+}
+.choice{
+    margin-bottom: 10px;   
+    width: 90%;
+    text-align: center;
+    border-radius: 50px;
+    padding: 7px;
+    background-color: rgb(255, 89, 0);
+    color: white;
+    border: none;
+    /* appearance: none; */
+    cursor: pointer;
+    font-weight: bold;
+}

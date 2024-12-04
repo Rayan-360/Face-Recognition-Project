@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=McLaren&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+a{
+    text-decoration: none;
+    font-family: "Poppins";
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 3%;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+.main-nav a{
+    position: relative;
+    font-weight: 600;
+    color: white;
+    margin-left: 40px;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+
+.logo-side{
+    position: relative;
+    top: 5px;
+    display: none;
+
+}
+
+.main-nav a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    left: 50%;
+    background: white;
+    transition: 0.4s;
+    transform: translateX(-50%);
+}
+.main-nav a:hover::before{
+    width: 100%;
+}
+
+
+
+.mode{
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card{
+    border: 2px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    width: 400px;
+    height: 420px;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
+.card p{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.card img{
+    width: 300px;
+    height: 170px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card button{
+    font-size: 20px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: none;
+    background-color: hsl(120, 100%, 25%);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease,font-size 0.3s ease;
+}
+.card button:hover{
+    background-color: hsl(120, 100%, 20%);
+    font-size: 21px;
+
+}
+
+.card button:active{
+    background-color: hsl(120, 100%, 30%);
+
+}
+
+.card button a{
+    color: white;
+    text-decoration: none;
+}
+
+.mode-container{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 50px;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    display: flex;
+    /* background: rgba(0, 0, 0, 0.5); */
+    background-color: rgba(33, 48, 78, 0.7);
+    border-left: 2px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(50px);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: all 0.3s ease;
+
+}
+.sidebar.open{
+    right: 0px;
+}
+
+.sidebar a{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px 20px;
+    width: 100%;
+    transition: background-color 0.3 ease;
+}
+.sidebar a:hover{
+    transition-duration: 0.3s;
+     background-color: hsla(0, 3%, 22%, 0.7); ;
+}
+.arrow svg{
+    position: relative;
+    top: 3px;
+    
+}
+
+@media(min-width:800){
+    .sidebar.open{
+        display: hidden;
+    }
+    .sidebar{
+        display: none;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .mode-container {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .card {
+        width: 70%; 
+        /* margin-top: 50px; */
+    }
+    .card img{
+        width: 320px;
+        height: 190px;
+    }
+    .mode{
+        margin-top: 150px;
+    }
+
+
+
+}
+
+@media(max-width:850px){
+    .logo-side{
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .main-nav .rem{
+        display: none;
+    }
+    .logo{
+        margin-left: 20px;
+    }
+}

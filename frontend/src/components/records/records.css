@@ -1,0 +1,97 @@
+.body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #001f3f, #003d80, #00aaff);
+    background-size: cover;
+    color: #ffffff;
+    min-height: 100vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.table-container {
+    margin: 20px;
+    margin-top: 90px;
+    min-width: 80%;
+    border-radius: 10px;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+
+.table-records {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #ffffff;
+    background: rgba(0, 15, 50, 0.85); 
+}
+
+.table-records thead {
+    background: linear-gradient(135deg, #003d80, #007acc);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.table-records th,
+.table-records td {
+    padding: 20px 125px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    white-space: nowrap;
+
+}
+
+.table-records th {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+.table-records tbody tr {
+    transition: background 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1300px) {
+    .table-records th,
+    .table-records td {
+        padding: 20px 100px; 
+    }
+    .table-records {
+        font-size: 1rem; 
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .table-records th,
+    .table-records td {
+        padding: 20px 80px; 
+    }
+    .table-records {
+        font-size: 1rem; 
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .table-records th,
+    .table-records td {
+        padding: 20px 60px; 
+    }
+    .table-records {
+        font-size: 1rem; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .table-records th,
+    .table-records td {
+        padding: 10px; 
+    }
+    .table-records {
+        font-size: 0.9rem; 
+    }
+}
+

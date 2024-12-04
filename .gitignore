@@ -1,0 +1,50 @@
+# Node modules directory (all dependencies)
+node_modules/
+
+# Build output directory
+build/
+
+# Temporary cache files
+.cache/
+*.cache/
+
+# Environment variables file (contains sensitive information)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage directory (if you use test coverage)
+coverage/
+
+# IDE or editor-specific directories and files
+.vscode/
+.idea/
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# ESLint cache files
+eslintcache
+
+# Parcel files
+.parcel-cache/
+
+# Dependency directories
+.pnp
+.pnp.js
+
+# Next.js build output
+.next/
+
+# TypeScript build output (if using TypeScript)
+dist/

@@ -1,0 +1,22 @@
+.dash-container{
+    color:white;
+    margin-left: 120px;
+    width: 50%;
+}
+.dash-heading {
+    font-weight: bolder;
+    font-size: 40px;
+    
+}
+.dash-content{
+    margin-top: 10px;
+    text-align: left;
+}
+.dash-button button{
+    border: none;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: white;
+
+}

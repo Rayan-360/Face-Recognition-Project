@@ -1,0 +1,19 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  box-sizing: border-box;
+  /* background-image: url('assets/face_bg.jpg');
+  background-size: cover;
+  background-position: center; */
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image:url('./assets/background.jpg') ;
+  background-size: cover;
+  background-position: center;
+}
+

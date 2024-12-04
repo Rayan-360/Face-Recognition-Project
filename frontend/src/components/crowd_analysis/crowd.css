@@ -1,0 +1,73 @@
+.crowd-analysis-container{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.crowd-analysis-container h1{
+    position: relative;
+    bottom: 200px;
+}
+.crowd-analysis-container button{
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+.stream-controls{
+    display: flex;
+    justify-content: center;
+    
+}
+.crowd-analysis-container .start{
+    background-color: green;
+    transition: font-size 0.3s ease;
+
+}
+.crowd-analysis-container .stop{
+    background-color: red;
+    transition: font-size 0.3s ease;
+}
+
+.start:hover{
+    font-size: 23px;
+}
+.stop:hover{
+    font-size: 23px;
+}
+.people-count{
+    
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.video-container {
+    display: flex; /* Flexbox to center the image */
+    justify-content: center; /* Horizontally center the image */
+    align-items: center; /* Vertically center the image */
+    overflow: hidden; /* Ensure any overflow is hidden */
+    width: 100%; /* Allow the container to adjust its width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+
+}
+
+
+
+@media(max-width:850px){
+    .video-container{
+        overflow: hidden;
+        width: 600px;
+        height: 500px;
+        border-radius: 10px;
+    }
+    .video-feed{
+        border-radius: 10px;
+    }
+
+}

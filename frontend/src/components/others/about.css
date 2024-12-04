@@ -1,0 +1,96 @@
+.section{
+    width: 80%;
+    color: white;
+    padding: 50px 30px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.1);
+    margin-left: 10%;
+    display: block;
+}
+.about-container{
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding-left: 40px;
+    padding-bottom: 300px;
+}
+
+.content-section{
+    float: left;
+    width:55%;
+}
+.image-section {
+    float: right;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.image-section img {
+    width: 70%;
+    height: auto;
+}
+.content-section .title{
+    text-transform: uppercase;
+    font-size: 28px;
+    text-wrap: nowrap;
+}
+
+.content-section .content h3{
+    margin-top: 20px;
+    font-size: 21px;
+}
+
+.content-section .content p{
+    margin-top: 10px;
+    line-height: 1.5;
+    font-size: 17px;
+}
+
+.read-btn{
+    width: 100%;
+    display: flex;
+    text-wrap: nowrap;
+}
+
+.read-btn button{
+    border: none;
+    color: white;
+    background-color: rgb(208, 45, 72);
+    padding: 10px 20px;
+    margin-top: 30px;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+}
+
+.read-btn button:hover{
+    background-color: hsl(350, 64%, 40%);
+    transition-duration: 0.3s;
+}
+
+.read-btn button:active{
+    background-color: hsl(350, 64%, 45%);
+    transition-duration: 0.3s;
+}
+
+@media screen and (max-width : 908px){
+    .about-container{
+        padding-bottom: 350px;
+    }
+    .image-section img {
+        margin-top: 90px;
+    }
+}
+
+@media screen and (max-width : 768px){
+    .about-container{
+        padding-bottom: 450px;
+    }
+
+}

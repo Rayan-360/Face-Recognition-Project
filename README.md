@@ -17,7 +17,7 @@
 
 ## 🚀 Technologies Used
 - **Frontend**: React.js (for the user interface)
-- **Backend**: Flask (Python), PyTorch
+- **Backend**: Flask (Python), Tensorflow
 - **Database**: MongoDB
 - **Face Recognition Models**: 
   - MTCNN for face detection
@@ -50,13 +50,8 @@
 
 3. Install frontend dependencies:
    ```bash
-   cd client
+   cd frontend
    npm install
-   ```
-
-4. Start MongoDB:
-   ```bash
-   mongod
    ```
 
 ### Running the Project
@@ -67,7 +62,7 @@
 
 2. Start the React frontend:
    ```bash
-   cd client
+   cd frontend
    npm start
    ```
 
@@ -130,5 +125,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📧 Contact
 For any queries or support, reach out to:
 - **Developer**: Rayan  
-- **Email**: [Your Email Address]  
-- **GitHub**: [Your GitHub Profile]
+- **Email**: [abd17rayan@gmail.com]  
+
